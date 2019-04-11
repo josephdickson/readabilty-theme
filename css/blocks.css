@@ -1,0 +1,66 @@
+/* *
+ * Blocks CSS
+ * # Core Blocks
+ * 	## Common
+ * 	## Formatting
+ * 	## Layout
+ * 	## Widgets
+ * 	## Embeds
+ * # Images
+ *
+ */
+
+
+/* *
+ * # Core Blocks 
+ */
+
+.wp-block{
+	margin: 0 auto;
+	max-width: 48rem;
+}
+
+/* *
+ * ## Common 
+ * Paragraph, Image, Heading, Subheading, Gallery, List, Quote, Audio, Cover Image, File, Video
+ * example: core/paragraph
+ */
+
+/* *
+ * ## Formatting
+ * Table, Verse, Code, Classic, Custom HTML, Preformatted, Pullquote
+ * example: core/table
+ */
+
+/* *
+ * ## Layout
+ * Button, Columns, More, Page break, Seperator, Spacer
+ * example: core/button
+ */
+
+/* *
+ * ## Widgets 
+ * Shortcode, Archives, Categories, Latest Comments, Latest Posts
+ * example: core/latest-comments
+ */
+
+/* *
+ * ## Embeds
+ * embed, twitter, youtube, facebook, instagram, wordpress, soundcloud, spotify, flickr, vimeo, animoto, cloudup, collegehumor, dailymotion, funnyordie, hulu, imgur, issuu, kickstarter, meetup-com, mixcloud, photobucket, polldaddy, reddit, reverbnation, scribd, slideshare, smugmug, speaker, ted, tumblr, videopress, wordpress-tv
+ * example: core/embed
+ * example: core-embed/twitter
+ */
+
+/* *
+ * # Images
+ */
+
+.wp-block-image.alignfull {
+	max-width: 100%;
+	padding: 1rem 0;
+}
+
+.wp-block-image.alignwide {
+	max-width: 75rem;
+	padding: 1rem 0;
+}
