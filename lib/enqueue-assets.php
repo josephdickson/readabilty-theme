@@ -39,6 +39,13 @@ add_action( 'enqueue_block_assets', __NAMESPACE__ . '\enqueue_block_assets' );
 function enqueue_block_assets() {
 
 	wp_enqueue_style(
+		'fonts-css',
+		get_stylesheet_directory_uri() . '/fonts/fonts.css',
+		time(), //change to filemtime for production
+		true
+	);
+
+	wp_enqueue_style(
 		'blocks-css',
 		get_stylesheet_directory_uri() . '/css/blocks.css',
 		time(), //change to filemtime for production
