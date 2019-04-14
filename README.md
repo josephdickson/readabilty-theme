@@ -1,47 +1,41 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+# Readability WordPress Theme
 
-_s
-===
+Readabilty is designed to for long form reading, documentation and blogging. This theme is currently a work in progress and shouldn't be used on a production website.
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+## Getting Started
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+Download this theme and upload it to a self hosted WordPress website. https://codex.wordpress.org/Using_Themes
 
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A helpful 404 template.
-* A custom header implementation in `inc/custom-header.php` just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/template-functions.php` that can improve your theming experience.
-* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
-Note: `.no-sidebar` styles are not automatically loaded.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Full support for `WooCommerce plugin` integration with hooks in `inc/woocommerce.php`, styling override woocommerce.css with product gallery features (zoom, swipe, lightbox) enabled.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+### Prerequisites
 
-Getting Started
----------------
+* WordPress installed and running on a server or your computer
+* This theme downloaded to your computer.
 
-If you want to keep it simple, head over to https://underscores.me and generate your `_s` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
+### Installing
+1. Log into your WordPress dashboard
+2. Visit Themes > Add New
+3. Click Upload Theme
+4. Browse to the Downloaded .zip file on your computer
+5. Upload the theme
+6. Activate the theme
 
-If you want to set things up manually, download `_s` from GitHub. The first thing you want to do is copy the `_s` directory and change the name to something else (like, say, `megatherium-is-awesome`), and then you'll need to do a five-step find and replace on the name in all the templates.
+## Authors
 
-1. Search for `'_s'` (inside single quotations) to capture the text domain.
-2. Search for `_s_` to capture all the function names.
-3. Search for `Text Domain: _s` in `style.css`.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks.
-5. Search for `_s-` to capture prefixed handles.
+* **Joseph Dickosn** - *Initial work* - [Joseph-Dickson.com](https://joseph-dickson.com)
 
-OR
+## License
 
-1. Search for: `'_s'` and replace with: `'megatherium-is-awesome'`
-2. Search for: `_s_` and replace with: `megatherium_is_awesome_`
-3. Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium-is-awesome` in `style.css`.
-4. Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium_is_Awesome</code>
-5. Search for: `_s-` and replace with: `megatherium-is-awesome-`
+This project is licensed under the GNU Public License version 3 - see the [LICENSE.md](LICENSE.md) file for details
 
-Then, update the stylesheet header in `style.css`, the links in `footer.php` with your own information and rename `_s.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
+### Fonts
 
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
+#### Open Sans
+* [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-Good luck!
+#### Rhodium Libre
+* [SIL Open Font License v1.1](https://tldrlegal.com/license/open-font-license-(ofl)-explained#summary) 
+
+## Acknowledgments
+
+* Built using the [_s theme](http://underscores.me/)
+* Fonts incorporated in this theme make use of the [google-webfonts-helper-project](https://google-webfonts-helper.herokuapp.com/fonts)
