@@ -20,7 +20,7 @@
  * # Core Blocks 
  */
 
-.wp-block{
+.wp-block {
 	font-family: "Rhodium Libre", serif;
 	font-size: 22px;
 	margin: 0 auto;
@@ -34,18 +34,6 @@
  */
 
 /* *
- * ### Title - Post Title, Page Title
- */
-h1.entry-title,
-.wp-block.editor-post-title__block .editor-post-title__input {
-	color: rgb(64, 64, 64);
-	font-family: "Rhodium Libre", serif;
-	font-size: 3rem;
-	font-weight: normal;
-	line-height: 1.5;
-}
-
-/* *
  * ### Headline
  */
 
@@ -55,6 +43,46 @@ h1.entry-title,
 
 p.wp-block-paragraph.editor-rich-text__tinymce {
 	font-size: 22px;
+}
+
+/* *
+ * ### Quote
+ */
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+	background-color: #f1f1f1;
+	border-radius: 0.5rem;
+	border-width: 0;
+	font-size: 1.7rem;
+	padding: 3rem;
+}
+
+.wp-block-quote p,
+.wp-block-quote .editor-rich-text__tinymce p {
+	color: #404040;
+	font-size: 1.5rem;
+	margin: 0.25rem 0;
+}
+
+.wp-block-quote cite,
+.wp-block-quote__citation {
+	color: #404040;
+	font-family: "Open Sans";
+	font-size: 1.25rem;
+	font-style: italic;
+	font-weight: 900;
+}
+
+/* *
+ * ### Title - Post Title, Page Title
+ */
+
+h1.entry-title,
+.wp-block.editor-post-title__block .editor-post-title__input {
+	color: rgb(64, 64, 64);
+	font-family: "Rhodium Libre", serif;
+	font-size: 3rem;
+	font-weight: normal;
+	line-height: 1.5;
 }
 
 /* *
