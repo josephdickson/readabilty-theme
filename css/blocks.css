@@ -34,6 +34,20 @@
  */
 
 /* *
+ * ### Title - Post Title, Page Title
+ */
+
+h1.entry-title,
+.wp-block.editor-post-title__block .editor-post-title__input {
+	color: rgb(64, 64, 64);
+	font-family: "Rhodium Libre", serif;
+	font-size: 3rem;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+
+/* *
  * ### Headline
  */
 
@@ -47,6 +61,7 @@ p.wp-block-paragraph.editor-rich-text__tinymce {
 
 /* *
  * ### Quote
+ * -- Regular
  */
 .wp-block-quote:not(.is-large):not(.is-style-large) {
 	background-color: #f1f1f1;
@@ -71,19 +86,22 @@ p.wp-block-paragraph.editor-rich-text__tinymce {
 	font-style: italic;
 	font-weight: 900;
 }
-
-/* *
- * ### Title - Post Title, Page Title
- */
-
-h1.entry-title,
-.wp-block.editor-post-title__block .editor-post-title__input {
-	color: rgb(64, 64, 64);
-	font-family: "Rhodium Libre", serif;
-	font-size: 3rem;
-	font-weight: normal;
-	line-height: 1.5;
+.wp-block-quote.is-style-large {
+	background-color: #f1f1f1;
+	border-radius: 0.5rem;
+	margin: 1rem auto 0rem;
+	max-width: 75rem;
+	padding: 3rem;
 }
+
+.wp-block-quote.is-style-large p {
+	color: #404040;
+	font-size: 2.25rem;
+	font-style: normal;
+	margin: 0.25rem 0;
+}
+/* -- Large */
+
 
 /* *
  * ## Formatting
