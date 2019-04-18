@@ -6,8 +6,8 @@
  * 		### Headline
  * 		### Paragraph
  * 		### List
+ * 		### Code
  * 		### Quote
- * 		### Images
  * 	## Formatting
  * 	## Layout
  * 	## Widgets
@@ -20,7 +20,8 @@
  * # Core Blocks 
  */
 
-.wp-block {
+.wp-block,
+.wp-block-code .editor-plain-text {
 	font-family: "Rhodium Libre", serif;
 	font-size: 22px;
 	margin: 0 auto;
@@ -57,6 +58,22 @@ h1.entry-title,
 
 p.wp-block-paragraph.editor-rich-text__tinymce {
 	font-size: 22px;
+}
+
+/* *
+ * ### Code
+ */
+pre.wp-block-code,
+.editor-block-list__block-edit .wp-block-code textarea.editor-plain-text {
+	border: 1px solid #404040;
+	border-radius: 5px;
+	font-family: monospace;
+	font-size: 22px;
+	line-height: 1.7;
+	margin: 1rem auto;
+	max-width: 75rem;
+	padding: 1rem;
+	white-space: pre-wrap;
 }
 
 /* *

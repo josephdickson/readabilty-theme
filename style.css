@@ -4,7 +4,7 @@ Theme URI: https://joseph-dickson.com/readability-wordpress-theme
 Author: Joseph Dickson 
 Author URI: https:/joseph-dickson.com/
 Description: Readabilty gets out of the way and presents your content comfortably on small and large screens and is designed to serve well for blogs and portfolios.
-Version: 1.0.4
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: readability
@@ -446,7 +446,6 @@ pre {
 
 code, kbd, tt, var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	font-size: 18px;
 }
 
 abbr, acronym {
@@ -927,14 +926,6 @@ h2.widget-title {
 	margin: 0 auto;
 	max-width: 48rem;
 	padding: 0.7rem 1rem;
-}
-
-.entry-content pre, 
-.page-content pre {
-	border: 1px solid #404040;
-	border-radius: 5px;
-	line-height: 0.7;
-	max-width: 70rem;
 }
 
 .page-content h1,
