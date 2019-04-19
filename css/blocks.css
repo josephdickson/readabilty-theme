@@ -149,6 +149,18 @@ pre.wp-block-code,
  * # Images
  */
 
+div.wp-block-image {
+	max-width: 75rem;
+}
+
+.wp-block-image figcaption {
+	color: #404040;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.25rem;
+	margin-top: 0;
+	text-align: left;
+}
+
 .wp-block-image.alignfull {
 	max-width: 100%;
 	padding: 1rem 0;
