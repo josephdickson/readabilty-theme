@@ -127,6 +127,28 @@ function readability_widgets_init() {
 add_action( 'widgets_init', 'readability_widgets_init' );
 
 /**
+ * Classic Editor / tinyMCE CSS
+ */
+function add_editor_style( $stylesheet = 'editor-style.css' ) {
+	
+add_theme_support( 'editor-style' );
+
+	if ( ! is_admin() ) {
+		return;
+	}
+
+	global $editor_styles;
+	$editor_styles = (array) $editor_styles;
+	$stylesheet    = (array) $stylesheet;
+	if ( is_rtl() ) {
+		$rtl_stylesheet = str_replace( '.css', '-rtl.css', $stylesheet[0] );
+		$stylesheet[]   = $rtl_stylesheet;
+	}
+
+	$editor_styles = array_merge( $editor_styles, $stylesheet );
+}
+
+/**
  * Enqueue CSS and JS Block assets
  */
 require_once( __DIR__ . '/lib/enqueue-assets.php' );
