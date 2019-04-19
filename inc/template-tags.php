@@ -146,3 +146,39 @@ if ( ! function_exists( 'readability_post_thumbnail' ) ) :
 		endif; // End is_singular().
 	}
 endif;
+
+if ( ! function_exists( 'readability_post_thumbnail_768px' ) ) :
+	/**
+	 * Displays an optional post thumbnail's 768 squre version.
+	 *
+	 * Wraps the post thumbnail in an anchor element on index views, or a div
+	 * element when on single views.
+	 */
+	function readability_post_thumbnail_768px() {
+		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+			return;
+		}
+		
+		if ( is_singular() ) :
+			?>
+
+			<div class="post-thumbnail">
+				<?php the_post_thumbnail( array( 768,768 ) ); ?>
+			</div><!-- .post-thumbnail -->
+
+		<?php else : ?>
+
+		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+			<?php
+			the_post_thumbnail( 'post-thumbnail', array(
+				'alt' => the_title_attribute( array(
+					'echo' => false,
+				) ),
+			) );
+			?>
+		</a>
+
+		<?php
+		endif; // End is_singular().
+	}
+endif;
