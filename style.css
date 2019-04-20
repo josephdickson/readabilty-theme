@@ -651,11 +651,13 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	background-color: #404040;
+	border: solid #404040;
+	border-width: 1px 0;
 	clear: both;
 	display: block;
 	float: left;
-	padding: 1rem 0.5rem;
+	padding: 0.5rem 0.5rem 0 0.5rem;
+	text-align: center;
 	width: 100%;
 }
 
@@ -664,6 +666,7 @@ a:active {
 	list-style: none;
 	margin: 0 auto;
 	max-width: 75rem;
+	padding: 0;
 }
 
 .main-navigation ul ul {
@@ -698,7 +701,6 @@ a:active {
 .main-navigation a {
 	border: 3px solid transparent;
 	border-width: 0 0 3px 0;
-	color: #fff;
 	display: block;
 	line-height: 1.3rem;
 	padding: 0.5rem 0;
@@ -707,9 +709,14 @@ a:active {
 }
 
 .main-navigation a:hover {
-	border: solid #fff;
+	border: solid;
 	border-width: 0 0 3px 0;
 }
+
+.menu-menu-container {
+	line-height: 0;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -721,7 +728,7 @@ a:active {
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		display: inline-block;
 	}
 }
 
@@ -1104,6 +1111,7 @@ a.post-thumbnail {
 	margin: 0 auto;
 	max-width: 48rem;
 	padding: 0 1rem;
+	text-align: center;
 }
 
 .site-description {
