@@ -23,7 +23,14 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'readability' ); ?></a>
-
+	<?php 
+		if ( is_singular() ) {
+	?> 
+		<a class="skip-link screen-reader-text" href="#post-title"><?php esc_html_e( 'Skip to post title', 'readability' ); ?></a>
+	<?php
+		}
+	?>
+	<a class="skip-link screen-reader-text" href="#colophon"><?php esc_html_e( 'Skip to footer', 'readability' ); ?></a>
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php

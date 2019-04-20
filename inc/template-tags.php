@@ -163,14 +163,14 @@ if ( ! function_exists( 'readability_post_thumbnail_768px' ) ) :
 			?>
 
 			<div class="post-thumbnail">
-				<?php the_post_thumbnail( array( 768,768 ) ); ?>
+				<?php the_post_thumbnail( array( 768, 768 ) ); ?>
 			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>
 
 		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 			<?php
-			the_post_thumbnail( 'post-thumbnail', array(
+			the_post_thumbnail( array( 768, 768 ), 'post-thumbnail', array(
 				'alt' => the_title_attribute( array(
 					'echo' => false,
 				) ),
