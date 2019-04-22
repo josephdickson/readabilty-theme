@@ -133,6 +133,15 @@ pre.wp-block-code,
  */
 
 /* *
+ * ## Button
+ */
+a:hover:not(.wp-block-button__link), 
+a:focus:not(.wp-block-button__link), 
+a:active:not(.wp-block-button__link) {
+	background-color: #FFFFC3;
+}
+
+/* *
  * ## Widgets 
  * Shortcode, Archives, Categories, Latest Comments, Latest Posts
  * example: core/latest-comments
