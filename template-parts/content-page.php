@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php readability_post_thumbnail(); ?>
+	<?php readability_post_thumbnail_768px(); ?>
 
 	<header class="entry-header">
 		<?php the_title( '<h1 id="post-title" class="entry-title">', '</h1>' ); ?>
