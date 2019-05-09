@@ -12,7 +12,7 @@
  * @package Readability
  */
 
-get_header();
+get_header('alt');
 ?>
 
 	<div id="primary" class="content-area">
@@ -36,4 +36,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_footer();
+get_footer('alt');

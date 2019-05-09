@@ -4,7 +4,7 @@ Theme URI: https://joseph-dickson.com/readability-wordpress-theme
 Author: Joseph Dickson 
 Author URI: https:/joseph-dickson.com/
 Description: Readabilty gets out of the way and presents your content comfortably on small and large screens and is designed to serve well for blogs and portfolios.
-Version: 1.0.11
+Version: 1.0.13
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: readability
@@ -638,30 +638,36 @@ a {
 a:hover,
 a:focus,
 a:active {
+	border-bottom: 3px inset;
 	color: midnightblue;
-	border-bottom: 3px solid;
 	margin-bottom: 0;
 }
 
 a:focus {
-	outline: thin dotted;
+	outline: thin solid;
 }
 
-a:hover,
+a:hover, 
+a:focus, 
 a:active {
-	outline: 0;
+	background-color: #FFFFC3;
+	margin: -5px -5px -7px -5px;
+	padding: 5px;
+}
+
+a {
+	margin: -5px;
+	padding: 5px;
 }
 
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	border: solid #404040;
-	border-width: 1px 0;
 	clear: both;
 	display: block;
 	float: left;
-	padding: 0.5rem 0.5rem 0 0.5rem;
+	line-height: 1;
 	text-align: center;
 	width: 100%;
 }
@@ -700,6 +706,8 @@ a:active {
 
 .main-navigation li {
 	float: left;
+	margin: 5px;
+	padding: 5px;
 	position: relative;
 }
 
@@ -708,8 +716,6 @@ a:active {
 	border-width: 0 0 3px 0;
 	display: block;
 	line-height: 1.3rem;
-	padding: 0.5rem 0;
-	margin: 0 1.5rem;
 	text-decoration: none;
 }
 
@@ -1120,13 +1126,16 @@ a.post-thumbnail {
 }
 
 .site-description {
-	margin: 0 0 1rem 0;
+	margin: 0.5rem 0 1rem 0;
 
 	
 }
 
-.site-title {
+.site-title,
+h1.site-title {
+	font-family: 'Rhodium Libre','serif';
 	font-size: 2.5rem;
+	font-weight: normal;
 	line-height: 1.3;
 	margin: 1rem 0 0 0;
 }
