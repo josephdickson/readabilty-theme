@@ -4,7 +4,7 @@ Theme URI: https://joseph-dickson.com/readability-wordpress-theme
 Author: Joseph Dickson 
 Author URI: https:/joseph-dickson.com/
 Description: Readabilty gets out of the way and presents your content comfortably on small and large screens and is designed to serve well for blogs and portfolios.
-Version: 1.0.14
+Version: 1.0.15
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: readability
@@ -1041,6 +1041,7 @@ a.post-thumbnail {
 	border-width: 0;
 	display: block;
 	margin: 0 auto;
+	padding: 0;
 }
 
 /*--------------------------------------------------------------
