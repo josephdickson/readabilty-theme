@@ -416,7 +416,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 2rem;
 	font-style: normal;
 	font-weight: 600;
-	line-height: 1.5;
+	line-height: 1.3;
 }
 
 h2.entry-title {
@@ -549,7 +549,7 @@ input[type="submit"] {
 	border-radius: 3px;
 	background: #e6e6e6;
 	color: rgba(0, 0, 0, 0.8);
-	line-height: 1.7;
+	line-height: 1.3;
 	padding: 0.2rem 1rem;
 }
 
@@ -623,10 +623,8 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 .nav-links {
-	display: block;
 	margin: 0 auto;
 	max-width: 70rem;
-	padding: 0 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -636,7 +634,6 @@ a {
 	border-bottom: 1px inset;
 	color: royalblue;
 	display: inline-block;
-	line-height: 1;
 	margin-bottom: 2px;
 	text-decoration: none;
 }
@@ -646,6 +643,7 @@ a:focus,
 a:active {
 	border-bottom: 3px inset;
 	color: midnightblue;
+	line-height: inherit;
 	margin-bottom: 0;
 }
 
@@ -721,7 +719,6 @@ a {
 	border: 3px solid transparent;
 	border-width: 0 0 3px 0;
 	display: block;
-	line-height: 1.3rem;
 	text-decoration: none;
 }
 
